@@ -1,38 +1,139 @@
+@font-face {
+  font-family: InterBold;
+  src: url("../src/assets/fonts/Inter-Bold.ttf");
+}
+
+@font-face {
+  font-family: InterRegular;
+  src: url("../src/assets/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: InterSemiBold;
+  src: url("../src/assets/fonts/Inter-SemiBold.ttf");
+}
+
 .App {
   text-align: center;
+  background-color: #F5F5F6;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+aside {
+  background-color: #F2EBF9;
+  height: 100%;
+  width: 280px;
+  position:absolute;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  height: 36px;
+  width: 179px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  height: 100px;
+  width: 232px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  top: 140px;
+  left: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.navItem1 {
+  height: 42px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #F5F5F6;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-family: "InterRegular";
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navItem2 {
+  height: 42px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #F5F5F6;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-family: "InterRegular";
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.title {
+  position: absolute;
+  top: 40px;
+  left: 370px;
+  font-family: "InterBold";
+  font-size: 48px;
+}
+
+.categories {
+  position: absolute;
+  top: 128px;
+  left: 370px;
+  width: 980px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  font-family: "InterBold";
+  font-size: 16px;
+}
+
+.geners {
+  display: flex;
+  flex-direction: column;
+  width: 284px;
+  height: 72px;
+  text-align: left;
+}
+
+.year {
+  width: 284px;
+  height: 72px;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.rating {
+  width: 284px;
+  height: 72px;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.reset {
+  font-family: "InterRegular";
+  font-size: 14px;
+  left: 800px;
+  top: 40px;
+  position: absolute;
+}
+
+.selectLarge {
+  width: 284px;
+  height: 42px;
+}
+
+.selectSmall {
+  width: 138px;
+  height: 42px;
+}
+
+.text {
+  width: 284px;
 }
