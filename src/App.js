@@ -41,6 +41,7 @@ function App() {
           <button className="navItem">Rated movies</button>
           <button className="navItem">Other movies</button>
           <button className="navItem">5</button>
+          <button className="navItem">5</button>
         </div>
       </aside>
 
