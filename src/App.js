@@ -39,6 +39,7 @@ function App() {
         <div className="menu">
           <button className="navItem">Movies</button>
           <button className="navItem">Rated movies</button>
+          <button className="navItem">Other movies</button>
         </div>
       </aside>
 
@@ -92,7 +93,7 @@ function App() {
           </div>
 
           <div className="filmCardRow">
-          {data.map((item, index) => {
+            {data.map((item, index) => {
               const { year, title, img } = item;
               return <FilmCard src={img} title={title} year={year}></FilmCard>;
             })}
