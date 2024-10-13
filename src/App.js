@@ -21,28 +21,37 @@ function App() {
         <div className="filter_panel">
           <div className="filter_item">
             <p className="filter_item__title">Geners</p>
-            <select multiply name="genre" className="filter_item__select">
-              <summary>Select genre</summary>
+            <select multiple name="genre" className="filter_item__select">
+              <option value="">Select genre</option>
+              <option value="">Select genre</option>
+              <option value="">Select genre</option>
+              <option value="">Select genre</option>
             </select>
           </div>
           <div className="filter_item">
             <p className="filter_item__title">Release year</p>
-            <select multiply name="year" className="filter_item__select">
-              <summary>Year release</summary>
+            <select multiple name="year" className="filter_item__select">
+              <option value="">Year release</option>
+              <option value="">Year release</option>
+              <option value="">Year release</option>
+              <option value="">Year release</option>
             </select>
           </div>
           <div className="filter_item">
             <p className="filter_item__title">Ratings</p>
             <div className="filter_item__select">
-              <select
-                multiply
-                name="ratingFrom"
-                className="filter_item__select"
-              >
-                <summary>From</summary>
+              <select                 multiple                 name="ratingFrom"                 className="filter_item__select"               >
+                <option value="">From</option>
+                <option value="">From</option>
+                <option value="">From</option>
+                <option value="">From</option>
               </select>
-              <select multiply name="ratingTo" className="filter_item__select">
-                <summary>To</summary>
+              <select multiple name="ratingTo" className="filter_item__select">
+                <option value="">To</option>
+                <option value="">To</option>
+                <option value="">To</option>
+                <option value="">To</option>
+                <option value="">To</option>
               </select>
             </div>
           </div>
@@ -51,7 +60,11 @@ function App() {
             <p className="filter_item__title">Sort by</p>
             <div className="filter_item__select">
               <select name="sortBy" className="filter_item__select">
-                <summary>Sort by</summary>
+                <option value="">Sort by</option>
+                <option value="">Sort by</option>
+                <option value="">Sort by</option>
+                <option value="">Sort by</option>
+                <option value="">Sort by</option>
               </select>
             </div>
           </div>
