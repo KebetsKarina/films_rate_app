@@ -56,7 +56,19 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="film_cards"></div>
+        <div className="film_cards">
+          {DATA
+          .map(row => (
+            <div className="filmCardRow">
+              {
+                row.map((item) => {
+                  const {year, title, img } = item;
+                  return <FilmCard src={img} title={title} year={year}/>
+                })
+              }
+            </div>
+          ))}
+        </div>
       </main>
     </div>
   );
