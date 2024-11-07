@@ -88,31 +88,43 @@ main {
 }
 
 .filter_panel {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 1%;
   padding-left: 10%;
   width: 80%;
   font-family: "InterBold";
   font-size: 16px;
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 1%;
+  justify-content:space-around;
 }
 
 .filter_item {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 24%;
 }
 
 .filter_item__title {
   text-align: left;
 }
 
+.filter_item_button {
+  width: 25%;
+  color: gray;
+  font-family: "InterBold";
+  font-size: 16px;
+  background: none;
+  border: none;
+  padding-top: 4%;
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
 .filter_item__select {
   width: 100%;
   display: flex;
-  gap: 1%;
+  
   border-radius: 8px;
   height: 42px;
 }

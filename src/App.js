@@ -46,7 +46,7 @@ function App() {
               </select>
             </div>
           </div>
-          <button className="filter_item">Reset filters</button>
+          <button className="filter_item_button">Reset filters</button>
           <div className="filter_item">
             <p className="filter_item__title">Sort by</p>
             <div className="filter_item__select">
@@ -57,15 +57,12 @@ function App() {
           </div>
         </div>
         <div className="film_cards">
-          {DATA
-          .map(row => (
+          {DATA.map((row) => (
             <div className="filmCardRow">
-              {
-                row.map((item) => {
-                  const {year, title, img } = item;
-                  return <FilmCard src={img} title={title} year={year}/>
-                })
-              }
+              {row.map((item) => {
+                const { year, title, img } = item;
+                return <FilmCard src={img} title={title} year={year} />;
+              })}
             </div>
           ))}
         </div>
